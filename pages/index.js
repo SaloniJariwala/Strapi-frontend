@@ -1,13 +1,14 @@
 import { Inter } from "next/font/google";
+import { lazy } from "react";
 
-import FrontLayout from "@/components/Layout";
+const FrontLayout = dynamic(() => import("@/components/Layout"));
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return (
-    <>
-      <FrontLayout>Hii</FrontLayout>
-    </>
-  );
+    return (
+        <>
+            <FrontLayout>Hii</FrontLayout>
+        </>
+    );
 }

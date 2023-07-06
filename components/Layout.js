@@ -1,6 +1,6 @@
 import React from "react";
-import { Breadcrumb, Layout, Menu, theme } from "antd";
-const { Header, Content, Footer } = Layout;
+import { Layout, theme } from "antd";
+const { Header, Content } = Layout;
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -24,28 +24,18 @@ const FrontLayout = ({ children }) => {
                         style={{ height: 30, width: 30, cursor: "pointer" }}
                         onClick={() => router.push("/")}
                     />
-                    {/* <ul style={{ display: "flex", listStyle: "none", marginLeft: 30 }}>
-            <li style={{ margin: "0 10px" }}> */}
                     <Link href="/" style={{ color: "white", margin: "0 10px" }}>
                         Home
                     </Link>
-                    {/* </li>
-            <li style={{ margin: "0 10px" }}> */}
                     <Link href="/products" style={{ color: "white", margin: "0 10px" }}>
                         Products
                     </Link>
-                    {/* </li>
-            <li style={{ margin: "0 10px" }}> */}
                     <Link href="/about" style={{ color: "white", margin: "0 10px" }}>
                         About
                     </Link>
-                    {/* </li>
-            <li style={{ margin: "0 10px" }}> */}
                     <Link href="/contact" style={{ color: "white", margin: "0 10px" }}>
                         Contact
                     </Link>
-                    {/* </li>
-          </ul> */}
                 </Header>
                 <Content
                     style={{
@@ -59,13 +49,6 @@ const FrontLayout = ({ children }) => {
                         {children}
                     </div>
                 </Content>
-                {/* <Footer
-          style={{
-            textAlign: "center",
-          }}
-        >
-          Ant Design ©2023 Created by Ant UED
-        </Footer> */}
             </Layout>
         </>
     );

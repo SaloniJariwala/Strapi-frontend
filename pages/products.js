@@ -1,5 +1,4 @@
 import FrontLayout from "@/components/Layout";
-import axios from "axios";
 import React from "react";
 
 const Products = () => {

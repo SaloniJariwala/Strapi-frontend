@@ -5,6 +5,7 @@ const Contact = () => {
     return (
         <FrontLayout>
             <h1>Contact Page</h1>
+            <p style={{ color: "blue" }}>This is contact us description.</p>
         </FrontLayout>
     );
 };

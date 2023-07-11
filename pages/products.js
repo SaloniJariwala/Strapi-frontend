@@ -1,6 +1,5 @@
-import dynamic from "next/dynamic";
 import React from "react";
-const FrontLayout = dynamic(() => import("@/components/Layout"));
+import FrontLayout from "@/components/Layout";
 
 const Products = () => {
     return (

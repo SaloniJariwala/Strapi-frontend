@@ -1,11 +1,11 @@
-import dynamic from "next/dynamic";
 import React from "react";
-const FrontLayout = dynamic(() => import("@/components/Layout"));
+import FrontLayout from "@/components/Layout";
 
 const About = () => {
     return (
         <FrontLayout>
             <h1>About Us Page</h1>
+            <p style={{ color: "blue" }}>This is about us description.</p>
         </FrontLayout>
     );
 };
